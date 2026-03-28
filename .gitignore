@@ -7,6 +7,6 @@ Cover Letter.pdf
 Jefferson_Paleracio_Resume.pdf
 Lyn RESUME.pdf
 
-# Loose personal photos (site uses assets/images/ copies)
-jeff.jpg
-lyn photo.jpg
+# Loose personal photos in root (site uses assets/images/ copies)
+/jeff.jpg
+/lyn photo.jpg
