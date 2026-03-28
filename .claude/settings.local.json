@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(GIT_DIR=\"/c/Users/Jeff Paleracio/OneDrive/Documents/Jeff's File/Portfolio/.git\" GIT_WORK_TREE=\"/c/Users/Jeff Paleracio/OneDrive/Documents/Jeff's File/Portfolio\" git init \"/c/Users/Jeff Paleracio/OneDrive/Documents/Jeff's File/Portfolio\" 2>&1)",
+      "Bash(cmd.exe /c \"cd /d \\\\\"C:\\\\Users\\\\Jeff Paleracio\\\\OneDrive\\\\Documents\\\\Jeff's File\\\\Portfolio\\\\\" && git init\" 2>&1)",
+      "Bash(powershell.exe -Command \"Set-Location 'C:\\\\Users\\\\Jeff Paleracio\\\\OneDrive\\\\Documents\\\\Jeff''s File\\\\Portfolio'; git init 2>&1\")",
+      "Bash(powershell.exe -Command \"Set-Location 'C:\\\\Users\\\\Jeff Paleracio\\\\OneDrive\\\\Documents\\\\Jeff''s File\\\\Portfolio'; git add -A 2>&1; git status 2>&1\")"
+    ]
+  }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the combined skill sets of Jeff & Lyn — from technical development and AI automation to graphic design and social media marketing.">
+  <title>Skills & Expertise — Jeff & Lyn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/skills.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header class="header scrolled" role="banner">
+    <div class="container flex--between">
+      <a href="index.html" class="logo" aria-label="Jeff & Lyn home">J<span>&</span>L</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main class="page-content" id="main-content">
+    <section class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <h1 class="section__title" id="skills-heading">Skills & Expertise</h1>
+          <div class="divider"></div>
+          <p class="section__subtitle">Our combined toolkit covers technical, creative, and marketing disciplines.</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="skills-stats reveal">
+          <div class="stat-card">
+            <div class="stat-card__number">50+</div>
+            <div class="stat-card__label">Tools & Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">12+</div>
+            <div class="stat-card__label">Categories</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">8+</div>
+            <div class="stat-card__label">Years Combined</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__number">2</div>
+            <div class="stat-card__label">Specialists</div>
+          </div>
+        </div>
+
+        <!-- Tab controls -->
+        <div class="tabs reveal" role="tablist" aria-label="Filter skills by team member">
+          <button class="tab-btn active" data-filter="both" role="tab" aria-selected="true">Both</button>
+          <button class="tab-btn" data-filter="jeff" role="tab" aria-selected="false">Jeff</button>
+          <button class="tab-btn" data-filter="lyn" role="tab" aria-selected="false">Lyn</button>
+        </div>
+
+        <!-- Skills content -->
+        <div class="skills-content">
+          <!-- Jeff's skills -->
+          <div class="skills-column" data-member="jeff">
+            <div class="skills-column__header">
+              <span class="badge badge--jeff">Jeff</span>
+              <h2 class="skills-column__name">Technical & Creative</h2>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Video & Motion</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--jeff">After Effects</span>
+                <span class="pill pill--jeff">Premiere Pro</span>
+                <span class="pill pill--jeff">DaVinci Resolve</span>
+                <span class="pill pill--jeff">Descript</span>
+                <span class="pill pill--jeff">CapCut</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Design</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--jeff">Photoshop</span>
+                <span class="pill pill--jeff">Canva</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Development</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--jeff">Python</span>
+                <span class="pill pill--jeff">JavaScript</span>
+                <span class="pill pill--jeff">SQL</span>
+                <span class="pill pill--jeff">CSS</span>
+                <span class="pill pill--jeff">PHP</span>
+                <span class="pill pill--jeff">HTML</span>
+                <span class="pill pill--jeff">Git</span>
+                <span class="pill pill--jeff">Web Applications</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">AI & Automation</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--jeff">Claude AI</span>
+                <span class="pill pill--jeff">ChatGPT</span>
+                <span class="pill pill--jeff">Leonardo.AI</span>
+                <span class="pill pill--jeff">MoCap</span>
+                <span class="pill pill--jeff">Process Automation</span>
+                <span class="pill pill--jeff">AI-Assisted Development</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Project Management</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--jeff">Slack</span>
+                <span class="pill pill--jeff">Asana</span>
+                <span class="pill pill--jeff">Monday.com</span>
+                <span class="pill pill--jeff">ClickUp</span>
+                <span class="pill pill--jeff">Notion</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Business</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--jeff">Lean Six Sigma</span>
+                <span class="pill pill--jeff">Workflow Analysis</span>
+                <span class="pill pill--jeff">Data Visualization</span>
+                <span class="pill pill--jeff">Analytics Dashboards</span>
+                <span class="pill pill--jeff">Performance Reporting</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lyn's skills -->
+          <div class="skills-column" data-member="lyn">
+            <div class="skills-column__header">
+              <span class="badge badge--lyn">Lyn</span>
+              <h2 class="skills-column__name">Marketing & Admin</h2>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Advertising</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--lyn">FB Ads</span>
+                <span class="pill pill--lyn">TikTok Ads</span>
+                <span class="pill pill--lyn">Meta Business Suite</span>
+                <span class="pill pill--lyn">Napoleoncat</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Design</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--lyn">Canva</span>
+                <span class="pill pill--lyn">Adobe Photoshop</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Social Media</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--lyn">Later</span>
+                <span class="pill pill--lyn">Content Scheduling</span>
+                <span class="pill pill--lyn">Engagement Building</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">E-Commerce</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--lyn">Shopify</span>
+                <span class="pill pill--lyn">WooCommerce</span>
+                <span class="pill pill--lyn">Stamped</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Productivity</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--lyn">Google Apps</span>
+                <span class="pill pill--lyn">Microsoft Office</span>
+                <span class="pill pill--lyn">ClickUp</span>
+                <span class="pill pill--lyn">Dropbox</span>
+              </div>
+            </div>
+
+            <div class="skills-category reveal">
+              <h3 class="skills-category__title">Tools</h3>
+              <div class="skills-category__pills">
+                <span class="pill pill--lyn">Slack</span>
+                <span class="pill pill--lyn">TeamViewer</span>
+                <span class="pill pill--lyn">Dolphin Anty</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="skills-cta">
+      <div class="container reveal">
+        <h2 id="skills-cta">Need these skills for your project?</h2>
+        <p>We'd love to hear about your needs.</p>
+        <a href="contact.html" class="btn btn--primary">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Jeff & Lyn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

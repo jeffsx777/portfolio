@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of projects by Jeff & Lyn — video editing, AI automation, graphic design, social media campaigns, and more.">
+  <title>Projects — Jeff & Lyn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header scrolled" role="banner">
+    <div class="container flex--between">
+      <a href="index.html" class="logo" aria-label="Jeff & Lyn home">J<span>&</span>L</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="skills.html" class="nav-link">Skills</a>
+    <a href="experience.html" class="nav-link">Experience</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main class="page-content">
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <h1 class="section__title" id="projects-heading">Our Projects</h1>
+          <div class="divider"></div>
+          <p class="section__subtitle">A selection of our work across technical and creative disciplines.</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="project-filters reveal" role="group" aria-label="Filter projects by team member">
+          <button class="tab-btn active" data-filter="all">All</button>
+          <button class="tab-btn" data-filter="jeff">Jeff</button>
+          <button class="tab-btn" data-filter="lyn">Lyn</button>
+        </div>
+
+        <!-- Projects grid -->
+        <div class="projects-grid">
+
+          <!-- Jeff: Video Editing -->
+          <div class="card project-card reveal" data-member="jeff" data-title="Video Editing Showreel" data-description="A compilation of video editing projects including corporate presentations, social media content, and promotional materials created using After Effects, Premiere Pro, and DaVinci Resolve." data-tags="After Effects,Premiere Pro,DaVinci Resolve">
+            <div class="project-card__placeholder project-card__placeholder--jeff" aria-hidden="true">&#9654;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Video Editing Showreel</h3>
+                <span class="badge badge--jeff">Jeff</span>
+              </div>
+              <p class="project-card__desc">Corporate and creative video content — editing, motion graphics, and post-production.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">After Effects</span>
+                <span class="project-card__tag">Premiere Pro</span>
+                <span class="project-card__tag">DaVinci Resolve</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lyn: Social Media Designs -->
+          <div class="card project-card reveal" data-member="lyn" data-title="Social Media Designs — Ukay da Best" data-description="A series of engaging social media posts, product showcases, and promotional graphics designed for an online thrift store. Focused on brand consistency, visual appeal, and driving engagement." data-tags="Canva,Graphic Design,Social Media">
+            <div class="project-card__placeholder project-card__placeholder--lyn" aria-hidden="true">&#9733;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Social Media Designs — Ukay da Best</h3>
+                <span class="badge badge--lyn">Lyn</span>
+              </div>
+              <p class="project-card__desc">Branded social media posts and product showcases for an online thrift store.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Canva</span>
+                <span class="project-card__tag">Graphic Design</span>
+                <span class="project-card__tag">Social Media</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jeff: AI Automation -->
+          <div class="card project-card reveal" data-member="jeff" data-title="AI Automation Workflows" data-description="Custom automation solutions built using AI tools to streamline business processes — including automated data entry, report generation, content scheduling, and email workflows." data-tags="Process Automation,ChatGPT,Python">
+            <div class="project-card__placeholder project-card__placeholder--jeff" aria-hidden="true">&#9881;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">AI Automation Workflows</h3>
+                <span class="badge badge--jeff">Jeff</span>
+              </div>
+              <p class="project-card__desc">Custom AI-powered automation for data entry, reports, and scheduling workflows.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Process Automation</span>
+                <span class="project-card__tag">ChatGPT</span>
+                <span class="project-card__tag">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lyn: Infographics -->
+          <div class="card project-card reveal" data-member="lyn" data-title="Infographics — Freedom 700 Club" data-description="A collection of infographics and visual content created for Freedom 700 Club. These materials were used across digital platforms to communicate key messages and engage the audience through clear visual storytelling." data-tags="Photoshop,Canva,Infographics">
+            <div class="project-card__placeholder project-card__placeholder--lyn" aria-hidden="true">&#9881;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Infographics — Freedom 700 Club</h3>
+                <span class="badge badge--lyn">Lyn</span>
+              </div>
+              <p class="project-card__desc">Visual storytelling through infographics and marketing materials.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Photoshop</span>
+                <span class="project-card__tag">Canva</span>
+                <span class="project-card__tag">Infographics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jeff: Data Dashboard -->
+          <div class="card project-card reveal" data-member="jeff" data-title="Data Dashboards & Visualization" data-description="Business intelligence dashboards and data visualizations created to track KPIs, process efficiency metrics, and operational data. Built using SQL queries and visualization tools." data-tags="SQL,Data Visualization,Business Intelligence">
+            <div class="project-card__placeholder project-card__placeholder--jeff" aria-hidden="true">&#9635;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Data Dashboards & Visualization</h3>
+                <span class="badge badge--jeff">Jeff</span>
+              </div>
+              <p class="project-card__desc">Business intelligence dashboards tracking KPIs and operational metrics.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">SQL</span>
+                <span class="project-card__tag">Data Visualization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lyn: Ad Campaign -->
+          <div class="card project-card reveal" data-member="lyn" data-title="Facebook Ad Campaigns" data-description="End-to-end Facebook advertising campaigns including audience research, ad creative design, copywriting, A/B testing, and performance optimization. Managed budgets and tracked conversions across multiple client accounts." data-tags="FB Ads,Meta Business Suite,Ad Design">
+            <div class="project-card__placeholder project-card__placeholder--lyn" aria-hidden="true">&#9888;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Facebook Ad Campaigns</h3>
+                <span class="badge badge--lyn">Lyn</span>
+              </div>
+              <p class="project-card__desc">Full-funnel ad campaigns — audience targeting, creative, testing, and optimization.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">FB Ads</span>
+                <span class="project-card__tag">Meta Business Suite</span>
+                <span class="project-card__tag">Ad Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jeff: Web Dev (coming soon) -->
+          <div class="card project-card project-card--coming-soon reveal" data-member="jeff">
+            <div class="project-card__placeholder project-card__placeholder--jeff" aria-hidden="true">&#128187;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Web Development Projects</h3>
+                <span class="badge badge--jeff">Jeff</span>
+              </div>
+              <p class="project-card__desc">Website builds and development projects — coming soon.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">HTML</span>
+                <span class="project-card__tag">CSS</span>
+                <span class="project-card__tag">PHP</span>
+              </div>
+            </div>
+            <div class="coming-soon-label">Coming Soon</div>
+          </div>
+
+          <!-- Lyn: TikTok Ads (coming soon) -->
+          <div class="card project-card project-card--coming-soon reveal" data-member="lyn">
+            <div class="project-card__placeholder project-card__placeholder--lyn" aria-hidden="true">&#127916;</div>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">TikTok Ad Campaigns</h3>
+                <span class="badge badge--lyn">Lyn</span>
+              </div>
+              <p class="project-card__desc">TikTok advertising case studies and results — coming soon.</p>
+              <div class="project-card__tags">
+                <span class="project-card__tag">TikTok Ads</span>
+                <span class="project-card__tag">Content Strategy</span>
+              </div>
+            </div>
+            <div class="coming-soon-label">Coming Soon</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="projects-cta">
+      <div class="container reveal">
+        <h2 id="projects-cta">Like what you see?</h2>
+        <p>We'd love to create something great for you too.</p>
+        <a href="contact.html" class="btn btn--primary">Start a Project</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal">
+      <button class="modal__close" aria-label="Close modal">&times;</button>
+      <div class="modal__placeholder" style="width:100%;height:250px;border-radius:var(--radius-lg);margin-bottom:var(--space-lg);display:flex;align-items:center;justify-content:center;font-size:var(--text-4xl);"></div>
+      <h3 class="modal__title"></h3>
+      <div class="modal__meta"></div>
+      <p class="modal__description"></p>
+      <div class="modal__tags"></div>
+    </div>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__links">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Jeff & Lyn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    /* Project filters & modal */
+    function initProjectFilters() {
+      const filterBtns = document.querySelectorAll('.project-filters .tab-btn');
+      const cards = document.querySelectorAll('.project-card');
+      const modal = document.getElementById('project-modal');
+      const modalClose = modal ? modal.querySelector('.modal__close') : null;
+
+      // Filter
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          cards.forEach(card => {
+            const member = card.dataset.member;
+            if (filter === 'all' || filter === member) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        });
+      });
+
+      // Modal open
+      cards.forEach(card => {
+        if (card.classList.contains('project-card--coming-soon')) return;
+
+        card.addEventListener('click', () => {
+          const title = card.dataset.title;
+          const desc = card.dataset.description;
+          const tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+          const member = card.dataset.member;
+          const placeholder = card.querySelector('.project-card__placeholder');
+
+          modal.querySelector('.modal__title').textContent = title;
+          modal.querySelector('.modal__description').textContent = desc;
+          modal.querySelector('.modal__meta').innerHTML = `<span class="badge badge--${member}">${member === 'jeff' ? 'Jeff' : 'Lyn'}</span>`;
+
+          // Set placeholder style
+          const modalPlaceholder = modal.querySelector('.modal__placeholder');
+          if (placeholder) {
+            modalPlaceholder.innerHTML = placeholder.innerHTML;
+            modalPlaceholder.className = placeholder.className;
+            modalPlaceholder.style.width = '100%';
+            modalPlaceholder.style.height = '250px';
+            modalPlaceholder.style.borderRadius = 'var(--radius-lg)';
+            modalPlaceholder.style.marginBottom = 'var(--space-lg)';
+            modalPlaceholder.style.display = 'flex';
+            modalPlaceholder.style.alignItems = 'center';
+            modalPlaceholder.style.justifyContent = 'center';
+            modalPlaceholder.style.fontSize = 'var(--text-4xl)';
+          }
+
+          const tagsContainer = modal.querySelector('.modal__tags');
+          tagsContainer.innerHTML = tags.map(t => `<span class="pill pill--${member}">${t.trim()}</span>`).join('');
+
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      // Modal close
+      if (modalClose) {
+        modalClose.addEventListener('click', closeModal);
+      }
+
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+          }
+        });
+      }
+
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Initialize on DOM ready
+    document.addEventListener('DOMContentLoaded', initProjectFilters);
+  </script>
+</body>
+</html>

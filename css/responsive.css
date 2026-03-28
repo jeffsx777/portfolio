@@ -1,0 +1,162 @@
+/* ============================================
+   Responsive — All Media Queries (Mobile-First)
+   ============================================ */
+
+/* ---- Tablet (≥600px) ---- */
+@media (min-width: 600px) {
+  /* Layout grids */
+  .grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About bios */
+  .about-bios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Values */
+  .values {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Skills stats */
+  .skills-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Projects grid */
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact layout */
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---- Desktop (≥768px) ---- */
+@media (min-width: 768px) {
+  /* Show desktop nav, hide hamburger */
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}
+
+/* ---- Large Desktop (≥1024px) ---- */
+@media (min-width: 1024px) {
+  /* Typography scaling */
+  h1 { font-size: var(--text-6xl); }
+  h2 { font-size: var(--text-4xl); }
+
+  /* Layout grids */
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Services */
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Skills side-by-side */
+  .skills-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projects 3-column */
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Experience dual-track timeline */
+  .timeline::before {
+    display: block;
+  }
+
+  .timeline::after {
+    display: none;
+  }
+
+  .timeline-entry {
+    width: 48%;
+    padding-left: 0;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .timeline-entry::before {
+    left: auto;
+  }
+
+  /* Jeff entries: left side */
+  .timeline-entry--jeff {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: right;
+  }
+
+  .timeline-entry--jeff::before {
+    right: -32px;
+    left: auto;
+  }
+
+  .timeline-entry--jeff .timeline-card {
+    text-align: left;
+  }
+
+  /* Lyn entries: right side */
+  .timeline-entry--lyn {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .timeline-entry--lyn::before {
+    left: -32px;
+  }
+
+  /* Contact wider form */
+  .contact-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* ---- Extra small screens ---- */
+@media (max-width: 400px) {
+  .hero__profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,110 @@
+/* ============================================
+   Layout — Container, Grid, Section Spacing
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+/* Page sections */
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.section--hero {
+  padding: 0;
+  min-height: 100vh;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.section__title {
+  margin-bottom: var(--space-md);
+}
+
+.section__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-body);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Page content offset for fixed header */
+.page-content {
+  padding-top: var(--header-height);
+}
+
+/* Grid utilities */
+.grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.grid--2 {
+  grid-template-columns: 1fr;
+}
+
+.grid--3 {
+  grid-template-columns: 1fr;
+}
+
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.flex--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex--between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--wrap {
+  flex-wrap: wrap;
+}
+
+.flex--gap-sm { gap: var(--space-sm); }
+.flex--gap-md { gap: var(--space-md); }
+.flex--gap-lg { gap: var(--space-lg); }
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+  color: rgba(255, 255, 255, 0.7);
+  padding: var(--space-2xl) 0;
+  text-align: center;
+  font-size: var(--text-sm);
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.footer__copy {
+  opacity: 0.6;
+}

@@ -1,0 +1,160 @@
+/* ============================================
+   About Page Styles
+   ============================================ */
+
+/* Bio section */
+.about-bios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+}
+
+.bio-card {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-2xl) var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.bio-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+.card--jeff.bio-card::before {
+  background: linear-gradient(135deg, var(--color-jeff), #60a5fa);
+}
+
+.card--lyn.bio-card::before {
+  background: linear-gradient(135deg, var(--color-lyn), #c084fc);
+}
+
+.bio-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bio-card__avatar {
+  margin: 0 auto var(--space-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.bio-card__name {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
+}
+
+.bio-card__role {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  margin-bottom: var(--space-lg);
+}
+
+.bio-card__role--jeff { color: var(--color-jeff); }
+.bio-card__role--lyn { color: var(--color-lyn); }
+
+.bio-card__summary {
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+  text-align: left;
+}
+
+.bio-card__download {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.bio-card__download svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: var(--space-4xl) 0;
+  background-color: var(--color-surface);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+.testimonial-card {
+  padding: var(--space-xl);
+  position: relative;
+}
+
+.testimonial-card__quote {
+  font-size: var(--text-sm);
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: var(--space-lg);
+  position: relative;
+  padding-left: var(--space-lg);
+}
+
+.testimonial-card__quote::before {
+  content: '\201C';
+  position: absolute;
+  left: 0;
+  top: -8px;
+  font-size: var(--text-4xl);
+  font-family: var(--font-heading);
+  color: var(--color-lyn);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.card--jeff .testimonial-card__quote::before {
+  color: var(--color-jeff);
+}
+
+.testimonial-card__author {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.testimonial-card__position {
+  font-size: var(--text-xs);
+  color: var(--color-body);
+}
+
+/* Values section */
+.values {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.value-item {
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.value-item__icon {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.value-item h4 {
+  margin-bottom: var(--space-sm);
+}
+
+.value-item p {
+  font-size: var(--text-sm);
+}
